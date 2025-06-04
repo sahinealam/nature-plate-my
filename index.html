@@ -21,7 +21,7 @@
 </head>
 
 <body class="font-[Sora]">
-  <header hidden class="w-full bg-linear-to-r/oklch from-indigo-100 to-teal-100">
+  <header class="w-full bg-linear-to-r/oklch from-indigo-100 to-teal-100">
     <div class="max-w-7xl mx-auto px-4 py-3 flex items-center justify-between">
       <!-- Logo -->
       <div>
@@ -51,7 +51,7 @@
 
           <!-- Cart Icon -->
           <button class=" hover:text-green-600">
-            <i class="fa-solid fa-cart-shopping"></i>
+            <i class="fa-solid fa-cart-shopping scale-x-[-1]"></i>
           </button>
 
           <!-- Login Button -->
@@ -89,7 +89,7 @@
   </header>
   <main>
     <!-- Services -->
-    <section hidden>
+    <section>
       <h1 class="text-start text-[#179800] font-semibold mx-[44px]">Services</h1>
       <div class="grid grid-cols-1 items-center md:grid-cols-3 gap-4  px-8">
         <!-- card 1 -->
@@ -121,7 +121,7 @@
     </section>
 
     <!-- popule prodect -->
-    <section hidden class="bg-[#EFEBE3] ">
+    <section class="bg-[#EFEBE3] ">
       <h1 class="text-start text-[#179800] font-semibold mx-[44px]">populer</h1>
       <div class="grid grid-cols-1 md:grid-cols-4 gap-6">
         <!-- card-1 -->
@@ -247,13 +247,15 @@
       </div>
     </section>
     <!-- Arrival & Offers -->
-    <section hidden>
+    <section class="mt-5">
       <!-- card-1 -->
-      <div class="flex items-center gap-8 md:flex-col">
+      <div class="flex flex-col gap-5 ml-[50px] md:flex-row ">
         <div class=" h-[200px] w-[400px] bg-[#115414] flex items-center rounded-[24px]">
           <div>
             <img src="./assets/dawat-logo.png" alt="">
-            <button class="font-[Poppins] bg-[#63B76D] text-white ">Cook Exotic Dishes</button>
+            <button
+              class="font-[Poppins] bg-[#63B76D] hover:bg-green-700 text-white font-semibold px-6 py-2 rounded">Cook
+              Exotic Dishes</button>
             <h1 class="text-[#EFEBE3] font-[Poppins]">UP to 20% OFF</h1>
           </div>
           <div><img src="./assets/product-dawat.png" class="h-[50%] w-[50%]"></div>
@@ -262,21 +264,21 @@
         <div class=" h-[200px] w-[300px] bg-[#102861] flex items-center rounded-[24px]">
           <div class="items-center">
             <img src="./assets/indiagate-logo.png" alt="">
-            <button class="font-[Poppins] bg-[#63B76D] text-white ">World’s No.1 Rice</button>
+            <button class="font-[Poppins] bg-[#2A4D97] text-[#FFFFFF] font-semibold px-6 py-2 rounded">World’s No.1
+              Rice</button>
             <h1 class="text-[#EFEBE3]">UP to 40% OFF</h1>
           </div>
-          <div><img src="./assets/product-dawat.png" class="h-[50%] w-[50%]"></div>
+          <div><img src="./assets/product-indiagate.png" class="h-[50%] w-[50%]"></div>
         </div>
       </div>
     </section>
   </main>
 
-  <!-- Newsletter Section -->
-  <section class="">
+  <!-- Chaling pary -->
+  <section class="mt-5">
     <div class="max-w-6xl mx-auto px-6">
       <div class="bg-[#EFEBE3] rounded-xl p-10 flex flex-col md:flex-row items-center gap-10 shadow-lg">
-        <img src="./assets/fruit-basket.png" alt="Grocery Frut"
-          class="w-48 h-48 object-contain" />
+        <img src="./assets/fruit-basket.png" alt="Grocery Frut" class="w-48 h-48 object-contain" />
         <div class="flex-1">
           <h2 class="text-2xl font-semibold text-gray-800 mb-2">Get Grocery News!</h2>
           <p class="text-gray-600 mb-4">Exclusive training tips, tricks, product deals and more.</p>
@@ -296,39 +298,37 @@
     <div class="max-w-6xl mx-auto px-6 grid grid-cols-1 md:grid-cols-4 gap-10">
       <!-- Logo and Description -->
       <div class="md:col-span-1">
-       <img src="./assets/logo-white.png" alt="">
+        <img src="./assets/logo-white.png" alt="">
         <p class="text-sm text-gray-100">Discover a world of treats, toys, and essentials handpicked for your furry
           friends</p>
       </div>
 
       <!-- link -->
-    
-        <div>
-          <h4 class="font-semibold mb-3">Product</h4>
-      
-     
+
+      <div>
+        <h4 class="font-semibold mb-3">Product</h4>
+
+
         <h4 class="font-semibold mb-3">Services</h4>
-     
-      
+
+
         <h4 class="font-semibold mb-3">Contact us</h4>
+      </div>
+
+      <div class="space-x-4 mt-4 text-lg">
+        <div>
+          <h1>Follow Us</h1>
         </div>
-        
-        <div class="flex space-x-4 mt-4 text-lg">
-          <div>
-            <h1 class="text-center">Follow Us</h1>
-          </div>
+        <div class="flex items-center gap-3">
           <a href="https://www.facebook.com/md.sahine.397121"><i class="fab fa-facebook-f"></i></a>
-          <a href="https://www.instagram.com/" ><i class="fab fa-instagram"></i></a>
-          <a href="https://www.linkedin.com/" ><i class="fab fa-linkedin-in"></i></a>
+          <a href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a>
+          <a href="https://www.linkedin.com/"><i class="fab fa-linkedin-in"></i></a>
           <a href="https://www.youtube.com/"><i class="fab fa-youtube"></i></a>
         </div>
       </div>
     </div>
+    </div>
   </footer>
 </body>
-<!-- git commit -m "first commit"
- git push -u origin main
- git remote add origin https://github.com/sahinealam/nature-plate-my.git
-git branch -M main
-git push -u origin main -->
+
 </html>
